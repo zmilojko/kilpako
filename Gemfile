@@ -40,3 +40,6 @@ gem 'spring',        group: :development
 
 # We use HAML
 gem 'haml-rails'
+
+# Authentication with Devise
+gem 'devise'
