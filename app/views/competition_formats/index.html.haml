@@ -1,0 +1,19 @@
+%h1 Listing competition_formats
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @competition_formats.each do |competition_format|
+    %tr
+      %td= competition_format.name
+      %td= link_to 'Show', competition_format
+      %td= link_to 'Edit', edit_competition_format_path(competition_format)
+      %td= link_to 'Destroy', competition_format, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Competition format', new_competition_format_path

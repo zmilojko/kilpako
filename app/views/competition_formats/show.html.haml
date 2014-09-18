@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @competition_format.name
+
+= link_to 'Edit', edit_competition_format_path(@competition_format)
+\|
+= link_to 'Back', competition_formats_path

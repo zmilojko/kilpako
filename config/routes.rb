@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :competition_formats
+
   resources :events
 
   devise_for :users
