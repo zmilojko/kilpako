@@ -3,7 +3,7 @@ class AdminController < ApplicationController
   # If admin is not signed in, 404 is returned. There is no reason to
   # even admit that this page exists
   
-  before_action do |c| 
+  before_action except: [:show] do |controller| 
     if not current_user.try(:admin?) then raise ActionController::RoutingError.new("Not Found") end
   end
 
