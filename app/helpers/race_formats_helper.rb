@@ -1,0 +1,2 @@
+module RaceFormatsHelper
+end

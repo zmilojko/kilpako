@@ -1,0 +1,19 @@
+%h1 Listing race_formats
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @race_formats.each do |race_format|
+    %tr
+      %td= race_format.name
+      %td= link_to 'Show', race_format
+      %td= link_to 'Edit', edit_race_format_path(race_format)
+      %td= link_to 'Destroy', race_format, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Race format', new_race_format_path

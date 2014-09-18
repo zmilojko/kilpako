@@ -1,3 +1,4 @@
-p 'Create one competition format: two races combined'
+p 'Create two competition formats: two races combined and single race'
 
-@comp_format = CompetitionFormat.create! name: 'two races combined'
+@cf_2rc = CompetitionFormat.create! name: 'two races combined'
+@cf_1sr = CompetitionFormat.create! name: 'single race'
