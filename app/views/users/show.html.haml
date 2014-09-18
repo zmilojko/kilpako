@@ -4,8 +4,10 @@
   %b Name:
   = @user.name
 %p
-  %b Admin:
-  = @user.admin
+  %b Email:
+  = @user.email
+%p
+  = "(Admin)" if @user.admin?
 
 = link_to 'Edit', edit_user_path(@user)
 \|

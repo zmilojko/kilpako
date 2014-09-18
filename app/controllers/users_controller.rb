@@ -41,6 +41,7 @@ class UsersController < AdminController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
+      params[:user].except!(:password, :password_confirmation) if params[:user][:password].blank?
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
