@@ -13,6 +13,26 @@
   %b End date:
   = @event.end_date.to_date
 
+%h1 Competitions
+
+%table
+  %tr
+    %th Name
+    %th Format
+    %th Description
+    %th Start date
+    %th End date
+    %th Status
+
+  - @event.competitions.each do |competition|
+    %tr
+      %td= competition.name
+      %td= competition.competition_format.name
+      %td= competition.description
+      %td= competition.start_date
+      %td= competition.end_date
+      %td= competition.status
+
 = link_to 'Edit', edit_event_path(@event)
 \|
 = link_to 'Back', events_path

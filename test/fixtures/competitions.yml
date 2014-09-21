@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  start_date: 2014-09-21 12:43:30
+  end_date: 2014-09-21 12:43:30
+  status: MyString
+  event: one
+  competition_format: one
+
+two:
+  name: MyString
+  description: MyString
+  start_date: 2014-09-21 12:43:30
+  end_date: 2014-09-21 12:43:30
+  status: MyString
+  event: one
+  competition_format: one

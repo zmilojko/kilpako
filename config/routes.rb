@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :competitions
+
   resources :race_formats
 
   resources :competition_formats

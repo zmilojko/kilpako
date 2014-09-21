@@ -1,0 +1,31 @@
+%h1 Listing competitions
+
+%table
+  %tr
+    %th Event
+    %th Name
+    %th Format
+    %th Description
+    %th Start date
+    %th End date
+    %th Status
+    %th
+    %th
+    %th
+
+  - @competitions.each do |competition|
+    %tr
+      %td= competition.event.name
+      %td= competition.name
+      %td= competition.competition_format.name
+      %td= competition.description
+      %td= competition.start_date
+      %td= competition.end_date
+      %td= competition.status
+      %td= link_to 'Show', competition
+      %td= link_to 'Edit', edit_competition_path(competition)
+      %td= link_to 'Destroy', competition, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Competition', new_competition_path
