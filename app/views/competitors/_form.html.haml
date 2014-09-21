@@ -1,0 +1,19 @@
+= form_for @competitor do |f|
+  - if @competitor.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@competitor.errors.count, "error")} prohibited this competitor from being saved:"
+      %ul
+        - @competitor.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :number
+    = f.number_field :number
+  .field
+    = f.label :competition
+    = collection_select(:competitor, :competition_id, current_user.events.collect {|e| e.competitions }.flatten, :id, :name)
+  .field
+    = f.label :user
+    = collection_select(:competitor, :user_id, User.all, :id, :name)
+  .actions
+    = f.submit 'Save'

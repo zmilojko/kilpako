@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Number:
+  = @competitor.number
+%p
+  %b User:
+  = @competitor.user.name
+%p
+  %b Competition:
+  = "#{@competitor.competition.event.name} / #{@competitor.competition.name}"
+
+= link_to 'Edit', edit_competitor_path(@competitor)
+\|
+= link_to 'Back', competitors_path

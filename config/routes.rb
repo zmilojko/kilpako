@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :competitors
+
   resources :races
 
   resources :competitions
