@@ -4,6 +4,7 @@ class Competition < ActiveRecord::Base
 
   belongs_to :event
   belongs_to :competition_format
+  has_many :races
 
   def selected_status
     status.to_sym
