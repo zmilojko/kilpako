@@ -3,7 +3,7 @@ class Race < ActiveRecord::Base
 
   belongs_to :competition
   belongs_to :race_format
-  #has_many :runs
+  has_many :runs
 
   def selected_status
     status.to_sym

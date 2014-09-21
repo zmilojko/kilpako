@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  competitor: one
+  race: two 
+  number: 1
+  verdict: MyString
+  result_time: 9.99
+
+two:
+  competitor: one 
+  race: one 
+  number: 1
+  verdict: MyString
+  result_time: 9.99
