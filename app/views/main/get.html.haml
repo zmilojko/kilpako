@@ -19,7 +19,8 @@
       %h3.events-list-title Upcoming Events
       %ul.media-list.events-group
         %li.media.events-group
-          =image_tag "sport1.png", :class => "media-object events-image pull-left"
+          %a.pull-left{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{1}"}
+            =image_tag "sport1.png", :class => "media-object events-image"
           .media-body
             %a.events-title{:href => '/kilpako/events/1'} Robur sprint
             .span.glyphicon.glyphicon-arrow-down{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{1}"}
@@ -69,7 +70,8 @@
             %a.events-title{:href => '/kilpako/events/1'} EC 2014 Rautavaara
             %p.events-date 7.-9.3.2014
         %li.media.events-group
-          =image_tag "sport4.png", :class => "media-object events-image pull-left"
+          %a.pull-left{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{2}"}
+            =image_tag "sport4.png", :class => "media-object events-image pull-left"
           .media-body
             %a.events-title{:href => '/kilpako/events/1'} OSM Races 2014 Rautavaara
             .span.glyphicon.glyphicon-arrow-down{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{2}"}
