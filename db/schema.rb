@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140921143441) do
+ActiveRecord::Schema.define(version: 20140922084508) do
 
   create_table "competition_formats", force: true do |t|
     t.string   "name"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20140921143441) do
     t.string   "description"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.string   "status"
+    t.string   "status",                default: "not_published"
     t.integer  "event_id"
     t.integer  "competition_format_id"
     t.datetime "created_at"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140921143441) do
     t.datetime "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "status"
   end
 
   create_table "events_users", id: false, force: true do |t|
@@ -64,7 +65,7 @@ ActiveRecord::Schema.define(version: 20140921143441) do
 
   create_table "races", force: true do |t|
     t.string   "name"
-    t.string   "status"
+    t.string   "status",         default: "not_started"
     t.string   "spots"
     t.integer  "competition_id"
     t.integer  "race_format_id"
