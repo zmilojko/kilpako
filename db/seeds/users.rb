@@ -1,9 +1,13 @@
 p 'Create admin zeljko, password zeljko123, and many racers'
+
+# zeljko is an admin
 @zm = User.create! email: 'zeljko@z-ware.fi',
              password: 'zeljko123',
              password_confirmation: 'zeljko123',
              admin: true
 
+# Kata is not an admin, but has the owner of three races:
+# 
 @kp = User.create! email: 'kata@iloisettassut.fi',
              password: 'zeljko123',
              password_confirmation: 'zeljko123',
