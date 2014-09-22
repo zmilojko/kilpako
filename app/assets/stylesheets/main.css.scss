@@ -38,6 +38,12 @@ $color_5: #FFD900;
   background-color: $color_3;
 }
 
+.center-title-image{
+  background-color: $color_3;
+  height: 200px;
+  width: 200px;
+}
+
 #main-buttons
 {
   padding-top: 10px;
@@ -48,14 +54,11 @@ $color_5: #FFD900;
   padding: 0px;
 }
 
-.event-center-title
+.jumbotron.event-center-title
 {
   font-size: 60px;
   color: $color_1;
   background-color: $color_3;
-  margin-top: 20px;
-  padding-top: 40px;
-  height: 150px;
 }
 
 .events-title 
