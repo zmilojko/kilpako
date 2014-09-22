@@ -15,82 +15,81 @@
         =image_tag "kilpako.png", :class => "media-object center-title-image"
 .center-event-container
   .row
-    .col-md-1    
-    .col-md-4
+    .col-md-2    
+    .col-md-5
       %h3.events-list-title Upcoming Events
       %ul.media-list.events-group
         %li.media.events-group
-          %a.pull-left{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{1}"}
-            =image_tag "sport1.png", :class => "media-object", :class => "events-image"
+          =image_tag "sport1.png", :class => "media-object events-image pull-left"
           .media-body
-            %p.events-title Robur sprint
+            %a.events-title{:href => '/kilpako/events/1'} Robur sprint
+            .span.glyphicon.glyphicon-arrow-down{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{1}"}
             %p.events-date 3.-4.1.2015
             .media.panel-collapse.collapse.out{:id => "collapse#{1}"}
               %a.pull-left
-                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+                =image_tag "sport1.png", :class => "media-object competitions-image"
               .media-body
                 %p.competition-title 22Km Distance
                 %p.competition-date 3.1.2015
               %a.pull-left
-                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+                =image_tag "sport1.png", :class => "media-object competitions-image"
               .media-body
                 %p.competition-title 11Km Spring
                 %p.competition-date 4.1.2015
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport2.png", :class => "media-object events-image"
           .media-body
-            %p.events-title Ruuhirod
+            %a.events-title{:href => '/kilpako/events/1'} Ruuhirod
             %p.events-date 7.-8.2.2015
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport3.png", :class => "media-object events-image"
           .media-body
-            %p.events-title Ohkolan talvi
+            %a.events-title{:href => '/kilpako/events/1'} Ohkolan talvi
             %p.events-date 14.-15.2.2015
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport4.png", :class => "media-object events-image"
           .media-body
-            %p.events-title Eastpoint Open
+            %a.events-title{:href => '/kilpako/events/1'} Eastpoint Open
             %p.events-date 14.-15.2.2015
-    .col-md-2
-    .col-md-4
+    .col-md-5
       %h3.events-list-title Past Events
       %ul.media-list.events-group
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport2.png", :class => "media-object events-image"
           .media-body
-            %p.events-title ROI CROSS
+            %a.events-title{:href => '/kilpako/events/1'} ROI CROSS
             %p.events-date 20.9.14
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport3.png", :class => "media-object events-image"
           .media-body
-            %p.events-title EC 2014 Rautavaara
+            %a.events-title{:href => '/kilpako/events/1'} EC 2014 Rautavaara
             %p.events-date 7.-9.3.2014
         %li.media.events-group
-          %a.pull-left{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{2}"}
-            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+          =image_tag "sport4.png", :class => "media-object events-image pull-left"
           .media-body
-            %p.events-title OSM Races 2014 Rautavaara
+            %a.events-title{:href => '/kilpako/events/1'} OSM Races 2014 Rautavaara
+            .span.glyphicon.glyphicon-arrow-down{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{2}"}
             %p.events-date 15.-16.2.2014
             .media.panel-collapse.collapse.out{:id => "collapse#{2}"}
               %a.pull-left
-                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+                =image_tag "sport1.png", :class => "media-object competitions-image"
               .media-body
                 %p.competition-title 22Km Distance
                 %p.competition-date 15.2.2014
               %a.pull-left
-                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+                =image_tag "sport1.png", :class => "media-object competitions-image"
               .media-body
                 %p.competition-title 11Km Spring
                 %p.competition-date 16.2.2015
         %li.media.events-group
           %a.pull-left
-            =image_tag "sport5.png", :class => "media-object", :class => "events-image"
+            =image_tag "sport5.png", :class => "media-object events-image"
           .media-body
-            %p.events-title Jami
+            %a.events-title{:href => '/kilpako/events/1'} Jami
             %p.events-date 5.10.2014
-    .col-md-1
+    .col-md-2

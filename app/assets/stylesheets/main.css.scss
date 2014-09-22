@@ -67,6 +67,14 @@ $color_5: #FFD900;
   color: $color_3;
 }
 
+.events-title:hover,
+.events-title:focus,
+{
+  color: $color_2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .events-date
 {
   font-size: 18px;
