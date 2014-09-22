@@ -43,3 +43,6 @@ gem 'haml-rails'
 
 # Authentication with Devise
 gem 'devise'
+
+# Use puma as default
+gem 'puma'
