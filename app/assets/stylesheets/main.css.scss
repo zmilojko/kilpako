@@ -59,6 +59,7 @@ $color_5: #FFD900;
   font-size: 60px;
   color: $color_1;
   background-color: $color_3;
+  margin-bottom: 60px;
 }
 
 .events-title 
@@ -213,5 +214,11 @@ border-color: $color_4;
   background-color: $color_3;
 }
 
+.center-event-container{
+  margin-bottom: 100px;
+}
 
+.footer{
+  background-color: $color_3;
+}
 
