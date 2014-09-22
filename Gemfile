@@ -47,3 +47,4 @@ gem 'devise'
 # Use boostrap
 gem 'bootstrap-sass', '~> 3.2.0'
 
+

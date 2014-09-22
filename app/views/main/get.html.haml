@@ -1,52 +1,92 @@
-.center-header-container
+.container-fluid.center-title
+  .row
+    .col-md-12
+      %h1.event-center-title.text-center KILPAKO
+.center-container
   .container-fluid
     .navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
       .container
-        .navbar-header
-          %a.navbar-brand KILPAKO
-        .container
-          %form.navbar-form.pull-right
-            %button.btn.btn-primary{:role => "button"} Create Event
-            %button.btn.btn-primary{:type => "submit"} Sign In
-.center-container
-  .container#main-center
-    .row
-      .col-md-9
-        %h1#main-center-title KILPAKO
-        %p#main-center-content Welcome to Kilpako, the number one race details service.
-      .col-md-3
-        #main-center-image
-          %img.carbonad-image.carbonad-img{:src => "https://assets.servedby-buysellads.com/p/manage/asset/id/16674"}
+        %form.navbar-form.pull-right
+          %button.btn.btn-primary{:role => "button"} Create Event
+          %button.btn.btn-primary{:type => "submit"} Sign In
 .center-event-container
-  .container
-    .row
-      .col-md-2
-      .col-md-8
-        .jumbotron
-          %h2 New Events
-          #accordion.panel-group
-            .panel.panel-default
-              %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{1}"} 
-                Mark 
-                %span.badge.category-title-badge #{3}
-              .panel-collapse.collapse.out{:id => "collapse#{1}"}
-                .panel-body.category-box-panel
-                  .list-group.category-box-list
-                    #accordion.panel-group
-                      .panel.panel-default
-                        %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#"} 
-                          Mark 1
-                          %span.badge number
-                        %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => " collapse", href: "#"} 
-                          Mark 1
-                          %span.badge #{30}
-                        %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#"} 
-                          Mark 1 
-                          %span.badge #{1}
-              %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{2}"}
-                Jacob 
-                %span.badge.category-title-badge #{1} 
-              %a.list-group-item.category-box-item{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapse#{3}"}
-                Larry the bird 
-                %span.badge.category-title-badge #{4}
-      .col-md-2
+  .row
+    .col-md-1    
+    .col-md-4
+      %h3.events-list-title Upcoming Events
+      %ul.media-list.events-group
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport1.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Robur sprint
+            %p.events-date 3.-4.1.2015
+            .media
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 22Km Distance
+                %p.competition-date 3.1.2015
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 11Km Spring
+                %p.competition-date 4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ruuhirod
+            %p.events-date 7.-8.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ohkolan talvi
+            %p.events-date 14.-15.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Eastpoint Open
+            %p.events-date 14.-15.2.2015
+    .col-md-2
+    .col-md-4
+      %h3.events-list-title Past Events
+      %ul.media-list.events-group
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Robur sprint
+            %p.events-date 3.-4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ruuhirod
+            %p.events-date 7.-8.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ohkolan talvi
+            %p.events-date 14.-15.2.2015
+            .media
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 22Km Distance
+                %p.competition-date 3.1.2015
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 11Km Spring
+                %p.competition-date 4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport5.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Eastpoint Open
+            %p.events-date 14.-15.2.2015
+    .col-md-1
