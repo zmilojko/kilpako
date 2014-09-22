@@ -1,3 +1,206 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Campfire pallet
+/*
+$color_1: #588C73;
+$color_2: #F2E394;
+$color_3: #F2AE72;
+$color_4: #D96459;
+$color_5: #8C4646;
+*/
+
+//Our Little Project paller
+/*
+$color_1: #354458;
+$color_2: #3A9AD9;
+$color_3: #29ABA4;
+$color_4: #E9E0D6;
+$color_5: #EB7260;
+*/
+
+//Sa Barca de Formentera
+$color_1: #333333;
+$color_2: #424242;
+$color_3: #00CCD6;
+$color_4: #EFEFEF;
+$color_5: #FFD900;
+
+.notice,
+.alert{
+  visibility: hidden;
+  margin: 0px;
+}
+
+#main-center
+{
+  background-color: $color_3;
+}
+
+#main-buttons
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.center-title{
+  padding: 0px;
+}
+
+.event-center-title
+{
+  font-size: 60px;
+  color: $color_1;
+  background-color: $color_3;
+  margin-top: 20px;
+  padding-top: 40px;
+  height: 150px;
+}
+
+.events-title 
+{
+  font-size: 22px;
+  color: $color_3;
+}
+
+.events-date
+{
+  font-size: 18px;
+  color: $color_1;
+}
+
+.competition-title 
+{
+  font-size: 15px;
+  color: $color_3;
+}
+
+.competition-date
+{
+  font-size: 12px;
+  color: $color_1;
+}
+
+.events-details
+{
+  font-size: 14px;
+  color: $color_1;
+}
+
+.events-group
+{
+  background-color: $color_4;
+  border-color: $color_4;
+}
+
+.events-image{
+  height: 40px;
+  width: 40px;
+}
+
+.competitions-image{
+  height: 30px;
+  width: 30px;
+}
+
+#brand-title
+{
+  font-size: 25px;
+  color: $color_1;
+}
+
+#main-center-content
+{
+  font-size: 30px;
+  margin-right: 50px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: $color_1;
+}
+
+#jumbo-title{
+  color: $color_1;
+}
+
+
+#main-center-image
+{
+  border: 0px;
+  height: 50px;
+  width: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sponsor
+{
+  background: url(https://assets.servedby-buysellads.com/p/manage/asset/id/16674);
+  background-size: 130px 100px;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+  width: 130px;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.btn-primary
+{
+  background-color: $color_1;
+  border-color: $color_1;
+}
+
+.btn:hover,
+.btn:focus,
+{
+  background-color: $color_5;
+  border-color: $color_5;
+}
+
+.navbar-inverse {
+background-color: $color_4;
+border-color: $color_4;
+}
+
+.navbar-brand:focus{
+  background-color: $color_1;
+  border-color: $color_1;
+}
+
+.body-style{
+  background-color: $color_4;
+}
+
+.jumbotron{
+  background-color: $color_4;
+}
+
+.list-group-item.category-box-item:hover,
+.list-group-item.category-box-item:focus
+{
+  background-color: $color_5;
+}
+
+.list-group-item.category-box-item,
+.list-group-item.category-box-item
+{
+  color: $color_1;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.list-group-item.category-box-item,
+{
+  background-color: $color_4;
+  border-color: $color_3;
+}
+
+.panel.panel-default.panel-events{
+  border-color: $color_3;
+  background-color: $color_3;
+}
+
+
+

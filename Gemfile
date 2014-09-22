@@ -43,3 +43,8 @@ gem 'haml-rails'
 
 # Authentication with Devise
 gem 'devise'
+
+# Use boostrap
+gem 'bootstrap-sass', '~> 3.2.0'
+
+

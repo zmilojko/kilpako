@@ -1,2 +1,92 @@
-%h1 kilapko.com
-%p Welcome to kilpako.com main page! This is as far as you will get for now!
+.container-fluid.center-title
+  .row
+    .col-md-12
+      %h1.event-center-title.text-center KILPAKO
+.center-container
+  .container-fluid
+    .navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+      .container
+        %form.navbar-form.pull-right
+          %button.btn.btn-primary{:role => "button"} Create Event
+          %button.btn.btn-primary{:type => "submit"} Sign In
+.center-event-container
+  .row
+    .col-md-1    
+    .col-md-4
+      %h3.events-list-title Upcoming Events
+      %ul.media-list.events-group
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport1.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Robur sprint
+            %p.events-date 3.-4.1.2015
+            .media
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 22Km Distance
+                %p.competition-date 3.1.2015
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 11Km Spring
+                %p.competition-date 4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ruuhirod
+            %p.events-date 7.-8.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ohkolan talvi
+            %p.events-date 14.-15.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Eastpoint Open
+            %p.events-date 14.-15.2.2015
+    .col-md-2
+    .col-md-4
+      %h3.events-list-title Past Events
+      %ul.media-list.events-group
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport2.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Robur sprint
+            %p.events-date 3.-4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport3.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ruuhirod
+            %p.events-date 7.-8.2.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport4.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Ohkolan talvi
+            %p.events-date 14.-15.2.2015
+            .media
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 22Km Distance
+                %p.competition-date 3.1.2015
+              %a.pull-left
+                =image_tag "sport1.png", :class => "media-object", :class => "competitions-image"
+              .media-body
+                %p.competition-title 11Km Spring
+                %p.competition-date 4.1.2015
+        %li.media.events-group
+          %a.pull-left
+            =image_tag "sport5.png", :class => "media-object", :class => "events-image"
+          .media-body
+            %p.events-title Eastpoint Open
+            %p.events-date 14.-15.2.2015
+    .col-md-1
