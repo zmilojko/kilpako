@@ -2,33 +2,33 @@
 
 ## ROI CROSS, 20.9.14 (closed)
 
-Main page: [http://rpkk.com/wp-content/uploads/2014/09/Kisailmo_2014.pdf][]
+Main page: [http://rpkk.com/wp-content/uploads/2014/09/Kisailmo_2014.pdf]()
 
-Results: [https://www.vul.fi/sites/default/files/RoiCross%202014_tulokset%20teksti_0.pdf][]
+Results: [https://www.vul.fi/sites/default/files/RoiCross%202014_tulokset%20teksti_0.pdf]()
 
 ## EC 2014 Rautavaara, 7.-9.3.2014 (closed)
 
-Main page: [http://ec2014.vul.fi/][]
+Main page: [http://ec2014.vul.fi/]()
 
-Results: [https://www.vul.fi/sites/default/files/RESULTS_EC_on%20snow_Rautavaara_2014.pdf][]
+Results: [https://www.vul.fi/sites/default/files/RESULTS_EC_on%20snow_Rautavaara_2014.pdf]()
 
 ## SM Races 2014 Rautavaara, 15.-16.2.2014. (closed)
 
-Main page: [http://www.vul.fi/?q=fi/node/550][]
+Main page: [http://www.vul.fi/?q=fi/node/550]()
 
-Results: [https://www.vul.fi/sites/default/files/Tulokset%20Mets%C3%A4kartano%20Race%2015.%20-%2016.2.2014_1.pdf][]
+Results: [https://www.vul.fi/sites/default/files/Tulokset%20Mets%C3%A4kartano%20Race%2015.%20-%2016.2.2014_1.pdf]()
 
-Weird spreadsheet: [https://docs.google.com/spreadsheet/ccc?key=0Ava2s48i3ovedGJ4TGJjNG9yMnpzeTZkdWU3Nm9mMGc&usp=drive_web#gid=0][]
+Weird spreadsheet: [https://docs.google.com/spreadsheet/ccc?key=0Ava2s48i3ovedGJ4TGJjNG9yMnpzeTZkdWU3Nm9mMGc&usp=drive_web#gid=0]()
 
 ## Jami 5.10.2014 (open, will be closed)
 
-Main page: [https://www.vul.fi/?q=fi/node/674][]
+Main page: [https://www.vul.fi/?q=fi/node/674]()
 
 # Upcoming events
 
 Schedule, after a lot of searching, cane be found here:
 
-[http://www.vul.fi/sites/default/files/P%C3%B6yt%C3%A4kirja%2012_2014.pdf][]
+[http://www.vul.fi/sites/default/files/P%C3%B6yt%C3%A4kirja%2012_2014.pdf]()
 
 ## Robur sprint 3.-4.1.2015
 
@@ -54,6 +54,6 @@ Other pages...
 
 # Dog racing categories
 
-[https://www.vul.fi/?q=fi/node/213][]
+[https://www.vul.fi/?q=fi/node/213]()
 
 
