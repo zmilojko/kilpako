@@ -1,0 +1,20 @@
+I do not want to put the whole huge LibreOffice file here, but
+just main macros that help create seeds:
+
+Old approach used offseting to create multiple lines from one:
+
+=OFFSET('raw data'.$K$1,(ROW()-1)/$L$1,0,1,1)
+
+Note that L1 was 5, meaning number or rows per one
+
+New approach:
+
+Initials from three fields (first, last, nationality)
+
+=CONCATENATE(LOWER(LEFT(D1)),LOWER(LEFT(E1)),LOWER(LEFT(F1)))
+
+Time r verdict from 23:47,1 meaning 23 minutes, 47,1 seconds
+
+=IFERROR( CONCATENATE("result_time: ",TEXT(VALUE(LEFT(H1,2))*60+VALUE(MID(REPLACE(H1,6,1,"."),4,4)),"0.0##")) ,CONCATENATE("verdict: :",LOWER(H1)))
+
+
