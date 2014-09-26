@@ -360,6 +360,11 @@ unless ENV["minimal"]
                     password_confirmation: 'Pauliina1234567',
                     name: 'Pauliina Kiiski',
                     nationality: :finland
+  @jjs ||= User.create! email: 'julia.johansson.com@example.com',
+                    password: 'Julia1234567',
+                    password_confirmation: 'Julia1234567',
+                    name: 'Julia Johansson',
+                    nationality: :sweden
   @asr ||= User.create! email: 'aleksandr.stoliarov@example.com',
                     password: 'Aleksandr1234567',
                     password_confirmation: 'Aleksandr1234567',
@@ -459,6 +464,18 @@ unless ENV["minimal"]
                     password: 'petri1234567',
                     password_confirmation: 'petri1234567',
                     name: 'Petri Kiiski',
+                    club: 'kvks',
+                    nationality: :finland
+  @rhf ||= User.create! email: 'raisa.heiskanen@example.com',
+                    password: 'raisa1234567',
+                    password_confirmation: 'raisa1234567',
+                    name: 'Raisa Heiskanen',
+                    club: 'kvks',
+                    nationality: :finland  
+  @ejf ||= User.create! email: 'eija.juntika@example.com',
+                    password: 'eija1234567',
+                    password_confirmation: 'eija1234567',
+                    name: 'Eija Juntika',
                     club: 'kvks',
                     nationality: :finland
   @tkf ||= User.create! email: 'teemu.kaivola@example.com',
@@ -581,6 +598,12 @@ unless ENV["minimal"]
                     name: 'Vesa-Pekka Lehtomäki',
                     club: 'kvks',
                     nationality: :finland
+  @ajf ||= User.create! email: 'anu.jaakonsaari@example.com',
+                    password: 'anu1234567',
+                    password_confirmation: 'anu1234567',
+                    name: 'Anu Jaakonsaari',
+                    club: 'kvks',
+                    nationality: :finland
   @sbf ||= User.create! email: 'susanna.byrkland@example.com',
                     password: 'susanna1234567',
                     password_confirmation: 'susanna1234567',
@@ -605,12 +628,12 @@ unless ENV["minimal"]
                     name: 'Anne Kiijärvi',
                     club: 'shs',
                     nationality: :finland
-  @ahkf ||= User.create! email: 'agneta.henriksson.kiruna,@example.com',
+  @ahs ||= User.create! email: 'agneta.henriksson.kiruna,@example.com',
                     password: 'agneta1234567',
                     password_confirmation: 'agneta1234567',
                     name: 'Agneta Henriksson Kiruna,',
                     club: 'swe',
-                    nationality: :finland
+                    nationality: :sweden
   @aif ||= User.create! email: 'anna-kristina.isoviita@example.com',
                     password: 'anna-kristina1234567',
                     password_confirmation: 'anna-kristina1234567',
@@ -623,12 +646,12 @@ unless ENV["minimal"]
                     name: 'Tero Asula',
                     club: 'l-svu',
                     nationality: :finland
-  @vrsf ||= User.create! email: 'viktoria.ryytty.sphk,@example.com',
+  @vrs ||= User.create! email: 'viktoria.ryytty.sphk,@example.com',
                     password: 'viktoria1234567',
                     password_confirmation: 'viktoria1234567',
                     name: 'Viktoria Ryytty SPHK,',
                     club: 'swe',
-                    nationality: :finland
+                    nationality: :sweden
   @kpf ||= User.create! email: 'kirsti.parikka@example.com',
                     password: 'kirsti1234567',
                     password_confirmation: 'kirsti1234567',
@@ -700,7 +723,7 @@ unless ENV["minimal"]
                     name: 'Maurin Kerst',
                     club: '',
                     nationality: :switzerland
-  @tahn ||= User.create! email: 'trond.are.hoel@example.com',
+  @thn ||= User.create! email: 'trond.are.hoel@example.com',
                     password: 'trond1234567',
                     password_confirmation: 'trond1234567',
                     name: 'Trond Are Hoel',
@@ -754,6 +777,12 @@ unless ENV["minimal"]
                     name: 'Jonas Persson',
                     club: '',
                     nationality: :sweden
+  @jpf ||= User.create! email: 'jussi.pietikanen@example.com',
+                    password: 'jussi1234567',
+                    password_confirmation: 'jussi1234567',
+                    name: 'Jussi Pietikanen',
+                    club: '',
+                    nationality: :finland
   @mvf ||= User.create! email: 'marko.viitahalme@example.com',
                     password: 'marko1234567',
                     password_confirmation: 'marko1234567',
@@ -790,7 +819,7 @@ unless ENV["minimal"]
                     name: 'Maija Nivala',
                     club: '',
                     nationality: :finland
-  @cann ||= User.create! email: 'carina.aas.nilsen@example.com',
+  @cnn ||= User.create! email: 'carina.aas.nilsen@example.com',
                     password: 'carina1234567',
                     password_confirmation: 'carina1234567',
                     name: 'Carina Aas Nilsen',
@@ -826,7 +855,7 @@ unless ENV["minimal"]
                     name: 'Tiina Blom',
                     club: '',
                     nationality: :sweden
-  @skan ||= User.create! email: 'solveig.k..aaseby@example.com',
+  @san ||= User.create! email: 'solveig.k..aaseby@example.com',
                     password: 'solveig1234567',
                     password_confirmation: 'solveig1234567',
                     name: 'Solveig K. Aaseby',
@@ -898,7 +927,7 @@ unless ENV["minimal"]
                     name: 'Madelene Nord',
                     club: '',
                     nationality: :sweden
-  @ofan ||= User.create! email: 'oda.foss.almqvist@example.com',
+  @oan ||= User.create! email: 'oda.foss.almqvist@example.com',
                     password: 'oda1234567',
                     password_confirmation: 'oda1234567',
                     name: 'Oda Foss Almqvist',
@@ -910,7 +939,7 @@ unless ENV["minimal"]
                     name: 'Sanna Näslund',
                     club: '',
                     nationality: :sweden
-  @akan ||= User.create! email: 'anna.kristine.amundrud@example.com',
+  @aan ||= User.create! email: 'anna.kristine.amundrud@example.com',
                     password: 'anna1234567',
                     password_confirmation: 'anna1234567',
                     name: 'Anna Kristine Amundrud',
@@ -946,13 +975,19 @@ unless ENV["minimal"]
                     name: 'Sanna Näslund',
                     club: '',
                     nationality: :sweden
-  @ofan ||= User.create! email: 'oda.foss.almqvist@example.com',
+  @jmn ||= User.create! email: 'jorgen.maland.com@example.com',
+                    password: 'jorgen1234567',
+                    password_confirmation: 'jorgen1234567',
+                    name: 'Jørgen Mæland',
+                    club: '',
+                    nationality: :sweden
+  @oan ||= User.create! email: 'oda.foss.almqvist@example.com',
                     password: 'oda1234567',
                     password_confirmation: 'oda1234567',
                     name: 'Oda Foss Almqvist',
                     club: '',
                     nationality: :norway
-  @akan ||= User.create! email: 'anna.kristine.amundrud@example.com',
+  @aan ||= User.create! email: 'anna.kristine.amundrud@example.com',
                     password: 'anna1234567',
                     password_confirmation: 'anna1234567',
                     name: 'Anna Kristine Amundrud',
@@ -964,13 +999,13 @@ unless ENV["minimal"]
                     name: 'Madelene Nord',
                     club: '',
                     nationality: :sweden
-  @cann ||= User.create! email: 'carina.aas.nilsen@example.com',
+  @cnn ||= User.create! email: 'carina.aas.nilsen@example.com',
                     password: 'carina1234567',
                     password_confirmation: 'carina1234567',
                     name: 'Carina Aas Nilsen',
                     club: '',
                     nationality: :norway
-  @skan ||= User.create! email: 'solveig.k..aaseby@example.com',
+  @san ||= User.create! email: 'solveig.k..aaseby@example.com',
                     password: 'solveig1234567',
                     password_confirmation: 'solveig1234567',
                     name: 'Solveig K. Aaseby',
@@ -1030,7 +1065,7 @@ unless ENV["minimal"]
                     name: 'Jonas Persson',
                     club: '',
                     nationality: :sweden
-  @tahn ||= User.create! email: 'trond.are.hoel@example.com',
+  @thn ||= User.create! email: 'trond.are.hoel@example.com',
                     password: 'trond1234567',
                     password_confirmation: 'trond1234567',
                     name: 'Trond Are Hoel',
