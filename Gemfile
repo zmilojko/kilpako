@@ -51,3 +51,6 @@ gem 'puma'
 
 # Redcarpet for markdown
 gem 'redcarpet'
+
+# Paperclip for image management
+gem "paperclip", "~> 4.2"

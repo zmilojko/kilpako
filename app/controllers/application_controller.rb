@@ -10,8 +10,8 @@ protected
     # sign in takes only email and password
     # devise_parameter_sanitizer.for(:sign_in) 
     # when signing up, or changing the account, name can also be set/changed
-    devise_parameter_sanitizer.for(:sign_up) << :name
-    devise_parameter_sanitizer.for(:account_update) << :name
+    devise_parameter_sanitizer.for(:sign_up) << :name << :avatar
+    devise_parameter_sanitizer.for(:account_update) << :name << :avatar
   end
 
 end
