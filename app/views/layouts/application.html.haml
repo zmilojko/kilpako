@@ -39,7 +39,7 @@
                   %li=link_to 'Register', new_user_registration_path
     .container.theme-showcase(role="main")
       - if alert
-        .alert.alert-danger{role: :alert}= alert    
+        #alert.alert.alert-danger{role: :alert}=alert    
       - if notice
-        .alert.alert-info{role: :alert}= notice
+        #notice.alert.alert-info{role: :alert}=notice
       = yield
