@@ -48,3 +48,6 @@ gem 'devise'
 
 # Use puma as default
 gem 'puma'
+
+# Redcarpet for markdown
+gem 'redcarpet'
