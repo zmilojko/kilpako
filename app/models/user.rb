@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
   has_and_belongs_to_many :events
   has_many :competitors
   has_many :competitions, through: :competitors
+  
+  def username
+    name
+  end
 end

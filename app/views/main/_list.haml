@@ -1,0 +1,8 @@
+%table.table.table-striper.table-condensed
+  -event.each do |e|
+    %tbody
+      %tr
+        %td=link_to e.name, e
+        %td=e.period_formatted
+        %td=e.venue
+        %td 

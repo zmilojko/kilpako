@@ -12,4 +12,14 @@
  *
  *= require_tree .
  *= require_self
+ *
+ * If we would need more css files than only this, one approach is:
+ *     http://www.outofscope.com/now-youre-thinking-with-bootstrap-part-2/#require
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+    padding-top: 70px;
+  }

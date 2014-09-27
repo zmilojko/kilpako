@@ -4,4 +4,10 @@ class Event < ActiveRecord::Base
   has_many :event_pages
 
   Status = [:not_published, :open, :ongoing, :closed, :cancelled]
+  
+  
+  
+  def period_formatted()
+    start_date
+  end
 end

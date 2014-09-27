@@ -1,2 +1,14 @@
-%h1 kilapko.com
-%p Welcome to kilpako.com main page! This is as far as you will get for now!
+.jumbotron
+  %h1 Kilpako
+  %strong Race with me!
+.row
+  .col-md-6
+    .page-header
+      %h2 Latest
+    %table.table.table-striper.table-condensed
+      = render 'list', event: @previous_events
+  .col-md-6
+    .page-header
+      %h2 Upcoming
+    %table.table.table-striper.table-condensed
+      = render 'list', event: @coming_events
