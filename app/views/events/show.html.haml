@@ -4,31 +4,24 @@
   %p= @event.venue
   %p=@event.period_formatted
 #content
-  %ul#tabs.nav.nav-tabs{"data-tabs" => "tabs"}
-    -@event.event_pages.each_with_index do |page, index|
-      %li(class="#{'active' if index==0}")
-        %a{"data-toggle" => "tab", :href => "##{page.name}"} #{page.name}
-    %li
-      %a{"data-toggle" => "tab", :href => "#Schedule"} Schedule
-  #my-tab-content.tab-content
-    -@event.event_pages.each_with_index do |page, index|
-      .tab-pane(id="#{page.name}" class="#{'active' if index==0}")
-        =Markdown.render(page.content).html_safe
-    .tab-pane(id="Schedule")
-      %h1 Competitions
-      %table
-        %tr
-          %th Name
-          %th Format
-          %th Description
-          %th Start date
-          %th End date
-          %th Status
-        - @event.competitions.each do |competition|
-          %tr
-            %td= competition.name
-            %td= competition.competition_format.name
-            %td= competition.description
-            %td= competition.start_date
-            %td= competition.end_date
-            %td= competition.status
+  .row
+    #left_area.col-md-9
+      %ul#tabs.nav.nav-tabs{"data-tabs" => "tabs"}
+        -@event.event_pages.each_with_index do |page, index|
+          %li(class="#{'active' if index==0}")
+            %a{"data-toggle" => "tab", :href => "##{page.name}"} #{page.name}
+        %li
+          %a{"data-toggle" => "tab", :href => "#Schedule"} Competition Schedule
+      #my-tab-content.tab-content
+        -@event.event_pages.each_with_index do |page, index|
+          .tab-pane(id="#{page.name}" class="#{'active' if index==0}")
+            =Markdown.render(page.content).html_safe
+        .tab-pane(id="Schedule")
+          =render 'competition_schedule'
+    #right_area.col-md-3
+      .row
+        %p Here will come one block!
+        %p Maybe sponsors...
+      .row
+        %p Here will come another.
+        %p  maybe news feed
