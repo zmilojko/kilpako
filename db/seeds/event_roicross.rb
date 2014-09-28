@@ -35,7 +35,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_ds1_r = @roi_ds1.races.create! status: :closed, race_format: @rf_tt
+@roi_ds1_r = @roi_ds1.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 11:00'
 
 @roi_dcmw = @roi.competitions.create! name: "DS1 4,5km",
   description: "DCMW Men+Women 4,5km",
@@ -43,7 +43,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_dcmw_r = @roi_dcmw.races.create! status: :closed, race_format: @rf_tt
+@roi_dcmw_r = @roi_dcmw.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 11:30'
 
 @roi_dbmdbw = @roi.competitions.create! name: "DBM/DBW 4,5km",
   description: "DBM/DBW Men+Women 4,5km",
@@ -51,7 +51,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_dbmdbw_r = @roi_dbmdbw.races.create! status: :closed, race_format: @rf_tt
+@roi_dbmdbw_r = @roi_dbmdbw.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 12:00'
 
 @roi_dcmjdcwj = @roi.competitions.create! name: "DCMJ / DCWJ 3km",
   description: "DCMJ / DCWJ Men+Women Juniors 3km",
@@ -59,7 +59,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_dcmjdcwj_r = @roi_dcmjdcwj.races.create! status: :closed, race_format: @rf_tt
+@roi_dcmjdcwj_r = @roi_dcmjdcwj.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 12:30'
 
 @roi_ds1j = @roi.competitions.create! name: "DS1J 3km",
   description: "DS1J Men+Women Juniors 3km",
@@ -67,7 +67,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_ds1j_r = @roi_ds1j.races.create! status: :closed, race_format: @rf_tt
+@roi_ds1j_r = @roi_ds1j.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 13:00'
 
 @roi_harrds1 = @roi.competitions.create! name: "Harr. DS1 3km",
   description: "DS1 Men+Women Harrastus sarja 3km",
@@ -75,7 +75,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_harrds1_r = @roi_harrds1.races.create! status: :closed, race_format: @rf_tt
+@roi_harrds1_r = @roi_harrds1.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 14:00'
 
 @roi_harrdc = @roi.competitions.create! name: "Harr. DC 3km",
   description: "DC Men+Women Harrastus sarja 3km",
@@ -83,7 +83,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   start_date: '2014-09-20',
   status: :closed,
   competition_format: @cf_1sr
-@roi_harrdc_r = @roi_harrdc.races.create! status: :closed, race_format: @rf_tt
+@roi_harrdc_r = @roi_harrdc.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 14:30'
 
 #competitors
 @roi_ds1_vjf = @roi_ds1.competitors.create! user: @vjf, number: 1

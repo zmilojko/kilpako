@@ -204,21 +204,35 @@ p 'Create event 2014 IFSS European Championships Finland'
 @ec14_md6_slf = @ec14_sp4.competitors.create! user: @slf, number: 127
 @ec14_md6_gzc = @ec14_sp4.competitors.create! user: @gzc, number: 121
 @ec14_md6_paf = @ec14_sp4.competitors.create! user: @paf, number: 125
-
-@ec14_sp4_day1 = @ec14_sp4.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_sp4j_day1 = @ec14_sp4j.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_sp6_day1 = @ec14_sp6.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_sp8_day1 = @ec14_sp8.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_spu_day1 = @ec14_spu.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_md12_day1 = @ec14_md12.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_md6_day1 = @ec14_md6.races.create! name: 'Sp4 7,2km Day 1', status: :closed, race_format: @rf_tt
-@ec14_sp4_day2 = @ec14_sp4.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_sp4j_day2 = @ec14_sp4j.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_sp6_day2 = @ec14_sp6.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_sp8_day2 = @ec14_sp8.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_spu_day2 = @ec14_spu.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_md12_day2 = @ec14_md12.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
-@ec14_md6_day2 = @ec14_md6.races.create! name: 'Sp4 7,2km Day 2', status: :closed, race_format: @rf_tt
+  
+@ec14_sp4_day1 = @ec14_sp4.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 11:00'
+@ec14_sp4j_day1 = @ec14_sp4j.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 12:00'
+@ec14_sp6_day1 = @ec14_sp6.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 12:30'
+@ec14_sp8_day1 = @ec14_sp8.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 13:30'
+@ec14_spu_day1 = @ec14_spu.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 14:30'
+@ec14_md12_day1 = @ec14_md12.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 15:30'
+@ec14_md6_day1 = @ec14_md6.races.create! name: 'Day 1', status: :closed,
+  race_format: @rf_tt, time: '2014-03-07 16:30'
+@ec14_sp4_day2 = @ec14_sp4.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 10:00'
+@ec14_sp4j_day2 = @ec14_sp4j.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 11:00'
+@ec14_sp6_day2 = @ec14_sp6.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 11:30'
+@ec14_sp8_day2 = @ec14_sp8.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 12:30'
+@ec14_spu_day2 = @ec14_spu.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 13:30'
+@ec14_md12_day2 = @ec14_md12.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 14:30'
+@ec14_md6_day2 = @ec14_md6.races.create! name: 'Day 2', status: :closed,
+  race_format: @rf_tt, time: '2014-03-08 15:30'
 
 # runs on day 1
 @ec14_sp4_day1_amf = @ec14_sp4_amf.runs.create! race: @ec14_sp4_day1, number: 56, result_time: 804.5
@@ -385,7 +399,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-06',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nms1_r = @ec14_nms1.races.create! status: :closed, race_format: @rf_tt
+@ec14_nms1_r = @ec14_nms1.races.create! status: :closed, race_format: @rf_tt, time: '2014-03-06 17:30'
 
 @ec14_nws1 = @ec14.competitions.create! name: "NWS1 8 + 5",
   description: "Nordic Sprint 1 Dog – Women 8 + 5km",
@@ -393,7 +407,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-06',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nws1_r = @ec14_nws1.races.create! status: :closed, race_format: @rf_tt
+@ec14_nws1_r = @ec14_nws1.races.create! status: :closed, race_format: @rf_tt, time: '2014-03-06 18:30'
 
 @ec14_nmsj = @ec14.competitions.create! name: "NMSJ 5 + 5",
   description: "Nordic Sprint 1 Dog - Man Juniours – Man 5 + 5km",
@@ -401,7 +415,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-06',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nmsj_r = @ec14_nmsj.races.create! status: :closed, race_format: @rf_tt
+@ec14_nmsj_r = @ec14_nmsj.races.create! status: :closed, race_format: @rf_tt, time: '2014-03-06 19:30'
 
 @ec14_nwsj = @ec14.competitions.create! name: "NWSJ 8 + 5",
   description: "Nordic Sprint 1 Dog – Women Juniors 5 + 5km",
@@ -409,7 +423,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-06',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nwsj_r = @ec14_nwsj.races.create! status: :closed, race_format: @rf_tt
+@ec14_nwsj_r = @ec14_nwsj.races.create! status: :closed, race_format: @rf_tt, time: '2014-03-06 20:30'
 
 @ec14_nwcj = @ec14.competitions.create! name: "NWCJ 5 + 5",
   description: "Nordic Combined 1 Dog – Women Juniors 5 + 5km",
@@ -417,7 +431,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-07',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nwcj_r = @ec14_nwcj.races.create! status: :closed, race_format: @rf_tt
+@ec14_nwcj_r = @ec14_nwcj.races.create! status: :closed, race_format: @rf_tt, time: '2014-03-07 13:00'
 
 @ec14_nwc = @ec14.competitions.create! name: "NWC 7 + 7",
   description: "Nordic Combined 1 Dog – Women (2 + 5km) + (2 + 5km)",
@@ -425,7 +439,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-07',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nwc_r = @ec14_nwc.races.create! status: :closed, race_format: @rf_ms
+@ec14_nwc_r = @ec14_nwc.races.create! status: :closed, race_format: @rf_ms, time: '2014-03-07 14:00'
 
 @ec14_nmc = @ec14.competitions.create! name: "NMC 7 + 7",
   description: "Nordic Combined 1 Dog – Men (2 + 5km) + (2 + 5km)",
@@ -433,7 +447,7 @@ p 'Create event 2014 IFSS European Championships Finland'
   start_date: '2014-03-07',
   status: :closed,
   competition_format: @cf_1sr
-@ec14_nmc_r = @ec14_nmc.races.create! status: :closed, race_format: @rf_ms
+@ec14_nmc_r = @ec14_nmc.races.create! status: :closed, race_format: @rf_ms, time: '2014-03-07 15:00'
 
 
 #competitors

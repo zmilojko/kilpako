@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140927135831) do
+ActiveRecord::Schema.define(version: 20140928080709) do
 
   create_table "competition_formats", force: true do |t|
     t.string   "name"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 20140927135831) do
     t.integer  "race_format_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "time"
   end
 
   add_index "races", ["competition_id"], name: "index_races_on_competition_id"

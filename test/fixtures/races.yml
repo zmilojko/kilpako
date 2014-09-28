@@ -5,7 +5,8 @@ one:
   status: MyString
   spots: MyString
   competition: one 
-  race_format: one 
+  race_format: one
+  time: 2014-09-18 15:08:34
 
 two:
   name: MyString
@@ -13,3 +14,4 @@ two:
   spots: MyString
   competition: one
   race_format: one
+  time: 2014-09-18 15:08:34

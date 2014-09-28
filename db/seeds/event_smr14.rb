@@ -63,7 +63,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-15',
   status: :closed,
   competition_format: @cf_2rc
-@smr_nmcnwc_day1 = @smr_nmcnwc.races.create! status: :closed, race_format: @rf_tt
+@smr_nmcnwc_day1 = @smr_nmcnwc.races.create! status: :closed, race_format: @rf_ms, time: '2014-02-15 10:00'
 
 @smr_sp6 = @event_smr.competitions.create! name: "SM Sp6 10 km",
   description: "SM Sp6, 6 koiran sprintti, 10 km",
@@ -71,8 +71,8 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_2rc
-@smr_sp6_day1 = @smr_sp6.races.create! status: :closed, race_format: @rf_tt
-@smr_sp6_day2 = @smr_sp6.races.create! status: :closed, race_format: @rf_tt
+@smr_sp6_day1 = @smr_sp6.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-15 12:00'
+@smr_sp6_day2 = @smr_sp6.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 10:00'
 
 @smr_sp8 = @event_smr.competitions.create! name: "SM Sp8 14,7 km",
   description: "SM Sp8, 8 koiran sprintti. 14,7 km",
@@ -80,8 +80,8 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_2rc
-@smr_sp8_day1 = @smr_sp8.races.create! status: :closed, race_format: @rf_tt
-@smr_sp8_day2 = @smr_sp8.races.create! status: :closed, race_format: @rf_tt
+@smr_sp8_day1 = @smr_sp8.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-15 13:00'
+@smr_sp8_day2 = @smr_sp8.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 11:00'
 
 @smr_sp4 = @event_smr.competitions.create! name: "Sp4 7,2 km",
   description: "Sp4, 4 koiran sprintti. 7,2 km",
@@ -89,8 +89,8 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_2rc
-@smr_sp4_day1 = @smr_sp4.races.create! status: :closed, race_format: @rf_tt
-@smr_sp4_day2 = @smr_sp4.races.create! status: :closed, race_format: @rf_tt
+@smr_sp4_day1 = @smr_sp4.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-15 14:00'
+@smr_sp4_day2 = @smr_sp4.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 12:00'
 
 @smr_spu = @event_smr.competitions.create! name: "SpU 21 km",
   description: "SpU, Avoin sprintti, 21 km",
@@ -98,8 +98,8 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_2rc
-@smr_spu_day1 = @smr_spu.races.create! status: :closed, race_format: @rf_tt
-@smr_spu_day2 = @smr_spu.races.create! status: :closed, race_format: @rf_tt
+@smr_spu_day1 = @smr_spu.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-15 15:00'
+@smr_spu_day2 = @smr_spu.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 13:00'
 
 @smr_nms2 = @event_smr.competitions.create! name: "NMS2 10 km",
   description: "NSM2 2-koiran koirahiihto, miehet 10 km",
@@ -107,7 +107,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_1sr
-@smr_nms2_day2 = @smr_nms2.races.create! status: :closed, race_format: @rf_tt
+@smr_nms2_day2 = @smr_nms2.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 14:00'
 
 @smr_nws2 = @event_smr.competitions.create! name: "NWS2 10 km",
   description: "NSW2 2-koiran koirahiihto, naiset 10 km",
@@ -115,7 +115,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
   end_date: '2014-02-16',
   status: :closed,
   competition_format: @cf_1sr
-@smr_nws2_day2 = @smr_nws2.races.create! status: :closed, race_format: @rf_tt
+@smr_nws2_day2 = @smr_nws2.races.create! status: :closed, race_format: @rf_tt, time: '2014-02-16 15:00'
 
 #competitors
 @smr_nmcnwc_vjf = @smr_nmcnwc.competitors.create! user: @vjf, number: 1
