@@ -14,4 +14,7 @@ class Competition < ActiveRecord::Base
   def selected_status=(new_status_symbol)
     status = new_status_symbol.to_s
   end
+  def period_formatted()
+    start_date.to_formatted_period end_date
+  end
 end
