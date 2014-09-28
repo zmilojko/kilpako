@@ -9,15 +9,19 @@
       %ul#tabs.nav.nav-tabs{"data-tabs" => "tabs"}
         -@event.event_pages.each_with_index do |page, index|
           %li(class="#{'active' if index==0}")
-            %a{"data-toggle" => "tab", :href => "##{page.name}"} #{page.name}
+            %a{"data-toggle" => "tab", :href => "##{page.name.to_id}"} #{page.name}
         %li
-          %a{"data-toggle" => "tab", :href => "#Schedule"} Competition Schedule
+          %a{"data-toggle" => "tab", :href => "#schedule"} Competition Schedule
+        %li
+          %a{"data-toggle" => "tab", :href => "#results"} Results
       #my-tab-content.tab-content
         -@event.event_pages.each_with_index do |page, index|
-          .tab-pane(id="#{page.name}" class="#{'active' if index==0}")
+          .tab-pane(id="#{page.name.to_id}" class="#{'active' if index==0}")
             =Markdown.render(page.content).html_safe
-        .tab-pane(id="Schedule")
+        .tab-pane(id="schedule")
           =render 'competition_schedule'
+        .tab-pane(id="results")
+          =render 'results'
     #right_area.col-md-3
       .row
         %p Here will come one block!

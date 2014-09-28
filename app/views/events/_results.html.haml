@@ -1,0 +1,8 @@
+%ul#tabs.nav.nav-pills
+  -@event.competitions.each_with_index do |competition, index|
+    %li
+      %a{"data-toggle" => "tab", :href => "#results_subtab_#{competition.name.to_id}"} #{competition.name}
+#my-tab-content.tab-content
+  -@event.competitions.each_with_index do |competition, index|
+    .tab-pane(id="results_subtab_#{competition.name.to_id}")
+      =render "competition_result_#{competition.competition_format.name.to_id}", competition: competition

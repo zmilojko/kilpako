@@ -1,0 +1,21 @@
+%table.table.table-striper.table-condensed
+  %thead
+    %tr
+      %th 
+      %th #
+      %th Name
+      %th Club
+      %th Country
+      %th Time
+  -competition.competitors.each_with_index do |competitor, position|
+    %tbody
+      %tr
+        %td=position + 1
+        %td=competitor.number
+        %td=competitor.user.name
+        %td=competitor.user.club
+        %td=competitor.user.nationality
+        -if competitor.runs.count == 1
+          %td=competitor.runs[0].result_time or competitor.runs[0].verdict.upcase
+        -else
+          %td DNS

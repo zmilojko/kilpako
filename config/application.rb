@@ -25,3 +25,4 @@ module Kilpako
 end
 
 require 'ext/time.rb'
+require 'ext/string.rb'

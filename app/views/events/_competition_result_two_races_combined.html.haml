@@ -1,0 +1,40 @@
+%table.table.table-striper.table-condensed
+  %thead
+    %tr
+      %th 
+      %th #
+      %th Name
+      %th Club
+      %th Country
+      %th First run
+      %th Second run
+      %th Total
+  -competition.competitors.each_with_index do |competitor, position|
+    %tbody
+      %tr
+        %td=position + 1
+        %td=competitor.number
+        %td=competitor.user.name
+        %td=competitor.user.club
+        %td=competitor.user.nationality
+        -if competitor.runs.count >= 1
+          %td=competitor.runs[0].result_time or competitor.runs[0].verdict.upcase
+          -if competitor.runs.count == 2
+            %td=competitor.runs[1].result_time or competitor.runs[1].verdict.upcase
+            -if competitor.runs[0].verdict.nil?
+              -if competitor.runs[1].verdict.nil?
+                %td= competitor.runs[0].result_time + competitor.runs[1].result_time
+              -else
+                %td DNF
+            -else
+              %td=competitor.runs[0].verdict.upcase
+          -else
+            %td DNS
+            -if not competitor.runs[0].verdict.nil?
+              =competitor.runs[0].verdict.upcase
+            -else
+              %td DNF
+        -else
+          %td 
+          %td 
+          %td DNS
