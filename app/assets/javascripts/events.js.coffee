@@ -1,3 +1,6 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+  if location.hash != ''
+    $('a[href="'+location.hash.replace("tab_","")+'"]').tab('show')
+
+  $('a[data-toggle="tab"]').on 'shown.bs.tab', (e) ->
+    location.hash = "tab_" + $(e.target).attr('href').substr(1)
