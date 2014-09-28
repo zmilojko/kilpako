@@ -37,7 +37,7 @@ p 'Create ROI Cross event, with 10 competitions and results.'
   competition_format: @cf_1sr
 @roi_ds1_r = @roi_ds1.races.create! status: :closed, race_format: @rf_tt, time: '2014-09-20 11:00'
 
-@roi_dcmw = @roi.competitions.create! name: "DS1 4,5km",
+@roi_dcmw = @roi.competitions.create! name: "DCMW 4,5km",
   description: "DCMW Men+Women 4,5km",
   start_date: '2014-09-20',
   start_date: '2014-09-20',

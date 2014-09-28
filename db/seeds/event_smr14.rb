@@ -62,7 +62,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
   start_date: '2014-02-15',
   end_date: '2014-02-15',
   status: :closed,
-  competition_format: @cf_2rc
+  competition_format: @cf_1sr
 @smr_nmcnwc_day1 = @smr_nmcnwc.races.create! status: :closed, race_format: @rf_ms, time: '2014-02-15 10:00'
 
 @smr_sp6 = @event_smr.competitions.create! name: "SM Sp6 10 km",
@@ -124,7 +124,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
 @smr_nmcnwc_mtf = @smr_nmcnwc.competitors.create! user: @mtf, number: 4
 @smr_nmcnwc_tlf = @smr_nmcnwc.competitors.create! user: @tlf, number: 5
 @smr_nmcnwc_mvf = @smr_nmcnwc.competitors.create! user: @mvf, number: 6
-@smr_nmcnwc_mvf = @smr_nmcnwc.competitors.create! user: @mvf, number: 7
+@smr_nmcnwc_mvf2 = @smr_nmcnwc.competitors.create! user: @mvf2, number: 7
 @smr_nmcnwc_pkf = @smr_nmcnwc.competitors.create! user: @pkf, number: 8
 @smr_nmcnwc_rhf = @smr_nmcnwc.competitors.create! user: @rhf, number: 9
 @smr_sp6_tkf = @smr_sp6.competitors.create! user: @tkf, number: 1
@@ -187,7 +187,7 @@ p 'Create SM Rautavaara event, with competitions and results.'
 @smr_nmcnwc_day1_mtf = @smr_nmcnwc_mtf.runs.create! race: @smr_nmcnwc_day1, number: 4, result_time: 2112.1
 @smr_nmcnwc_day1_tlf = @smr_nmcnwc_tlf.runs.create! race: @smr_nmcnwc_day1, number: 5, result_time: 2269.8
 @smr_nmcnwc_day1_mvf = @smr_nmcnwc_mvf.runs.create! race: @smr_nmcnwc_day1, number: 6, result_time: 2272.3
-@smr_nmcnwc_day1_mvf = @smr_nmcnwc_mvf.runs.create! race: @smr_nmcnwc_day1, number: 7, result_time: 2276.6
+@smr_nmcnwc_day1_mvf2 = @smr_nmcnwc_mvf2.runs.create! race: @smr_nmcnwc_day1, number: 7, result_time: 2276.6
 @smr_nmcnwc_day1_pkf = @smr_nmcnwc_pkf.runs.create! race: @smr_nmcnwc_day1, number: 8, result_time: 2328.0
 @smr_nmcnwc_day1_rhf = @smr_nmcnwc_rhf.runs.create! race: @smr_nmcnwc_day1, number: 9, verdict: :dns
 @smr_sp6_day1_tkf = @smr_sp6_tkf.runs.create! race: @smr_sp6_day1, number: 1, result_time: 1143.0

@@ -454,7 +454,7 @@ unless ENV["minimal"]
                     name: 'Maria Viitahalme',
                     club: 'kvks',
                     nationality: :finland
-  @mvf ||= User.create! email: 'marko.viitahalme@example.com',
+  @mvf2 ||= User.create! email: 'marko.viitahalme@example.com',
                     password: 'marko1234567',
                     password_confirmation: 'marko1234567',
                     name: 'Marko Viitahalme',
