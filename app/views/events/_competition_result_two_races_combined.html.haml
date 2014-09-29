@@ -4,37 +4,43 @@
       %th 
       %th #
       %th Name
-      %th Club
-      %th Country
+      %th="Club" if competition.competitors.any?{|c| not (c.user.club.nil? or c.user.club.empty?)}
+      %th="Country" if competition.competitors.any?{|c| c.user.nationality != "finland"}
       %th First run
       %th Second run
       %th Total
-  -competition.competitors.each_with_index do |competitor, position|
+      %th
+  -competition.competitors_ranked.each_with_index do |competitor, position|
     %tbody
       %tr
-        %td=position + 1
+        %td=position + 1 if competitor.result.is_a?(Numeric)
         %td=competitor.number
         %td=competitor.user.name
         %td=competitor.user.club
-        %td=competitor.user.nationality
+        %td=competitor.user.nationality if competition.competitors.any?{|c| c.user.nationality != "finland"} 
         -if competitor.runs.count >= 1
-          %td=competitor.runs[0].result_time or competitor.runs[0].verdict.upcase
+          %td=competitor.runs[0].result_time_formatted or competitor.runs[0].verdict.upcase
           -if competitor.runs.count == 2
-            %td=competitor.runs[1].result_time or competitor.runs[1].verdict.upcase
+            %td=competitor.runs[1].result_time_formatted or competitor.runs[1].verdict.upcase
             -if competitor.runs[0].verdict.nil?
               -if competitor.runs[1].verdict.nil?
-                %td= competitor.runs[0].result_time + competitor.runs[1].result_time
+                %td= competitor.result_time_formatted
+                %td= competitor.result_time_difference_formatted
               -else
                 %td DNF
+                %td
             -else
               %td=competitor.runs[0].verdict.upcase
+              %td
           -else
             %td DNS
             -if not competitor.runs[0].verdict.nil?
               =competitor.runs[0].verdict.upcase
             -else
               %td DNF
+            %td
         -else
           %td 
           %td 
           %td DNS
+          %td

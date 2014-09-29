@@ -63,7 +63,11 @@ class EventsController < MasterController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_object
-      @event = Event.find(params[:id])
+      @event = Event.includes( 
+        competitions: [
+          {competitors: [:user, {runs: [:race, {competitor: [:user, {runs: [:race, :competitor]}]}]}]},
+          {races: [{runs: [:race, {competitor: [:user, {runs: [:race, :competitor]}]}]}]}
+        ]).find(params[:id])
     end
 
     def owns_object?
